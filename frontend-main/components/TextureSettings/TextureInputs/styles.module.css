@@ -1,0 +1,17 @@
+.textureInputs {
+  width: 100%;
+
+}
+.textureInputs > * :global(label) { /* Labels */
+  min-width: 7.5rem;
+  font-weight: 600;
+  font-size: 14px;
+}
+.textureInputs > * :global(span) { /* values */
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.textureInputs > * :global(span) {
+
+}

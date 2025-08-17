@@ -1,0 +1,48 @@
+.popup {
+  height: 56px;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  background: var(--tertiary-bg-color);
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.download {
+
+}
+
+.text {
+  height: 100%;
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 var(--space-1-5);
+}
+
+.videoPreview {
+  width: 100%;
+  padding: 0 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  background: #000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

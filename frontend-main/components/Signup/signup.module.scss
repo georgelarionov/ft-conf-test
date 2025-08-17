@@ -1,0 +1,31 @@
+.wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.form {
+  max-width: 510px;
+  width: 100%;
+  margin: 0 20px;
+
+}
+
+.buttonSupport {
+  height: 70px;
+}
+
+.note {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+
+  span {
+    color: #7F7F7F;
+  }
+}

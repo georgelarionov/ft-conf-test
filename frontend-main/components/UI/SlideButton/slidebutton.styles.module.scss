@@ -1,0 +1,135 @@
+.slideButton {
+  cursor: pointer;
+  position: relative;
+
+  & + .slideButton {
+
+  }
+}
+
+.inner {
+  display: flex;
+  padding: 16px 18px;
+  font-weight: bold;
+  align-items: center;
+  background: var(--nav-silde-button-background);
+  border-radius: 8px;
+  height: 56px;
+
+  svg {
+    display: block;
+  }
+
+  @media all and (min-width: 481px) {
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  @media all and (min-width: 1025px) {
+    width: auto;
+    border-radius: 8px;
+    height: 56px;
+  }
+}
+
+.back {
+  padding-top: 1px;
+
+  @media all and (min-width: 481px) {
+    position: absolute;
+    z-index: 1000;
+    left: 56px;
+    top: 0;
+    background: var(--collapse-button-background);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 270px;
+    border: 1px solid var(--color-border);
+  }
+  @media all and (min-width: 1025px) {
+    margin-bottom: 0;
+    position: static;
+    left: unset;
+    top: unset;
+    background: unset;
+    padding: 0;
+    border-radius: 0;
+    min-width: unset;
+    border: none;
+  }
+}
+
+.icon {
+  // margin-right: 10px;
+}
+
+.arrow {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media all and (min-width: 481px) {
+    display: none;
+
+  }
+  @media all and (min-width: 1025px) {
+    display: block;
+  }
+}
+
+.arrow.opened {
+  transform: rotate(-180deg);
+}
+
+.content {
+
+  flex: 1;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+
+  @media all and (min-width: 481px) {
+    display: none;
+
+  }
+  @media all and (min-width: 1025px) {
+    display: block;
+  }
+}
+
+.opened {
+  background: var(--nav-silde-button-background-active);
+}
+
+.opened {
+  div {
+    color: #fff;
+  }
+}
+
+.item {
+
+  padding: 15px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  // background: var(--tertiary-bg-color);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+
+@media (max-width: 768px) {
+  .item {
+    width: calc(100vw - 40px);
+  }
+  .inner {
+    width: calc(100vw - 40px);
+  }
+}

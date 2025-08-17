@@ -1,0 +1,44 @@
+.homePage {
+  padding: var(--space-3) var(--space-4);
+}
+.homePage h3 {
+  margin-bottom: var(--space-4);
+}
+
+.list {
+  margin-left: -12px;
+  width: calc(100% + 12px);
+  display: flex;
+  flex-wrap: wrap;
+}
+.list > * {
+  padding: 12px;
+  width: 50%;
+  height: 230px;
+}
+.list > *:nth-child(n + 3) {
+  width: 33.33333%;
+  height: 270px;
+}
+.list > * > *:first-child {
+  height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .homePage {
+    padding: var(--space-3) var(--space-1-5);
+  }
+  .homePage h3 {
+    font-size: 20px;
+    margin-bottom: var(--space-3);
+  }
+
+  .list > * {
+    width: 100% !important;
+    height: initial !important;
+  }
+  .list > * > *:first-child {
+    width: 100%;
+    height: initial;
+  }
+}

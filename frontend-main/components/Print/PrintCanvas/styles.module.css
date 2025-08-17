@@ -1,0 +1,6 @@
+.printCanvas {
+  display: flex;
+  flex-direction: column;
+}
+
+

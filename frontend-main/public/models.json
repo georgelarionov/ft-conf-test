@@ -1,0 +1,194 @@
+﻿[
+  { 
+    "id": 0,
+    "modelName": "models/tshirt/tshirt.gltf",
+    "mainTexName": "models/tshirt/Tshirt.png",
+    "modelScale": 1,
+    "modelOffsetY": 0,
+    "flipBaseMapY": -1
+  },
+  { 
+    "id": 1,
+    "modelName": "models/gas_cap/gas_cap_1.gltf",
+    "mainTexName": "models/gas_cap/image_0.png",
+    "modelScale": 1,
+    "modelOffsetY": 0,
+    "flipBaseMapY": -1
+  },
+  { 
+    "id": 2,
+    "modelName": "models/Hoodies/Hoodie FMS/Hoodie FMS2.gltf",
+    "mainTexName": "models/Hoodies/Hoodie FMS/Knit_Cotton_Jersey_FRONT_2736812_Base_Color.jpg",
+    "modelScale": 0.75,
+    "modelOffsetY": -1.0,
+    "flipBaseMapY": -1
+  },
+  { 
+    "id": 3,
+    "modelName": "models/Cap 1KG/Cap 1KG.gltf",
+    "mainTexName": "models/Cap 1KG/Cotton_Stretch_Sateen_FRONT_1581_Base_Color 2.jpg",
+    "modelScale": 2.5,
+    "modelOffsetY": 0,
+    "flipBaseMapY": -1
+  },
+  { 
+    "id": 4,
+    "modelName": "models/Cap ADR/Cap ADR.gltf",
+    "mainTexName": "models/Cap ADR/Cotton_Heavy_Twill_FRONT_1786_Base_Color.jpg",
+    "modelScale": 2.0,
+    "modelOffsetY": 0,
+    "flipBaseMapY": 1
+  },
+  { 
+    "id": 5,
+    "modelName": "models/Cap Alphaphi Alpha/Cap Alphaphi Alpha.gltf",
+    "mainTexName": "models/Cap Alphaphi Alpha/Cotton_Gabardine_FRONT_1563_Base_Color.jpg",
+    "modelScale": 2.5,
+    "modelOffsetY": 0,
+    "flipBaseMapY": -1
+  },
+  { 
+    "id": 6,
+    "modelName": "models/Cap Arigato/Cap Arigato.glb",
+    "mainTexName": "models/Cap Arigato/Material2186191_Base_Color.jpg",
+    "modelScale": 2.5,
+    "modelOffsetY": 0,
+    "flipBaseMapY": -1
+  },
+  { 
+    "id": 7,
+    "modelName": "models/Cap Balcony Lifestyle/Cap Balcony Lifestyle.gltf",
+    "mainTexName": "models/Cap Balcony Lifestyle/Visor_Base_Color.jpg",
+    "modelScale": 2.5,
+    "modelOffsetY": 0,
+    "flipBaseMapY": -1
+  },
+  { 
+    "id": 8,
+    "modelName": "models/Cap LOST/Cap LOST.gltf",
+    "mainTexName": "models/Cap LOST/Cotton_Gabardine_FRONT_9552713_Base_Color.jpg",
+    "modelScale": 2.5,
+    "modelOffsetY": 0,
+    "flipBaseMapY": -1
+  },
+  { 
+    "id": 9,
+    "modelName": "models/Cap Tokyo Gun Club/Cap Tokyo Gun Club.gltf",
+    "mainTexName": "models/Cap Tokyo Gun Club/Cotton_40s_Stretch_Poplin_FRONT_1563_Base_Color.jpg",
+    "modelScale": 2.5,
+    "modelOffsetY": 0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 10,
+    "modelName": "models/Hoodies/Bomber Ricco Giovente/Bomber Ricco Giovente.gltf",
+    "mainTexName": "models/Hoodies/Bomber Ricco Giovente/base_FRONT_57368459_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 11,
+    "modelName": "models/Hoodies/Hoodie Arkyvs/Hoodie Arkyvs.gltf",
+    "mainTexName": "models/Hoodies/Hoodie Arkyvs/Rib_1X1_319gsm_FRONT_54582019_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 12,
+    "modelName": "models/Hoodies/Hoodie Black strange/Hoodie Black strange.gltf",
+    "mainTexName": "models/Hoodies/Hoodie Black strange/Knit_Cotton_Jersey_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 13,
+    "modelName": "models/Hoodies/Hoodie Cristopher Askew/Hoodie Cristopher Askew.gltf",
+    "mainTexName": "models/Hoodies/Hoodie Cristopher Askew/metal_FRONT_46642783_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 14,
+    "modelName": "models/Hoodies/Hoodie Dapadrone/Hoodie Dapadrone.gltf",
+    "mainTexName": "models/Hoodies/Hoodie Dapadrone/Rib_1X1_319gsm_FRONT_43574426_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 15,
+    "modelName": "models/Hoodies/Hoodie GAS/Hoodie GAS.gltf",
+    "mainTexName": "models/Hoodies/Hoodie GAS/(A)SwatchOn_QL-019555_Velvet_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 16,
+    "modelName": "models/Hoodies/Hoodie Kavech/Hoodie Kavech.gltf",
+    "mainTexName": "models/Hoodies/Hoodie Kavech/Knit_Cotton_Jersey_FRONT_37171988_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 17,
+    "modelName": "models/Hoodies/Hoodie Low loghts/Hoodie Low loghts.gltf",
+    "mainTexName": "models/Hoodies/Hoodie Low loghts/DefaultMaterial_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 18,
+    "modelName": "models/Hoodies/Hoodie Nate Washed Effect/Hoodie Nate Washed Effect.gltf",
+    "mainTexName": "models/Hoodies/Hoodie Nate Washed Effect/DefaultMaterial_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 19,
+    "modelName": "models/Hoodies/Hoodie Nike Drake/Hoodie Nike Drake.gltf",
+    "mainTexName": "models/Hoodies/Hoodie Nike Drake/Knit_Fleece_Terry_FRONT_13945931_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 20,
+    "modelName": "models/Hoodies/Hoodie Quarter Billion/Hoodie Quarter Billion.gltf",
+    "mainTexName": "models/Hoodies/Hoodie Quarter Billion/Knit_Cotton_Jersey_FRONT_5716338_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 21,
+    "modelName": "models/Hoodies/Hoodie Trapstar/Hoodie Trapstar.gltf",
+    "mainTexName": "models/Hoodies/Hoodie Trapstar/DefaultMaterial_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 22,
+    "modelName": "models/Hoodies/Sweatshirt Jungle/Sweatshirt Jungle.gltf",
+    "mainTexName": "models/Hoodies/Sweatshirt Jungle/Cotton_Sateen_Base_Color 2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  },
+  {
+    "id": 23,
+    "modelName": "models/Hoodies/Sweatshirt Melange RISCA/Sweatshirt Melange RISCA.gltf",
+    "mainTexName": "models/Hoodies/Sweatshirt Melange RISCA/FABRIC_Base_Color2.jpg",
+    "modelScale": 1.0,
+    "modelOffsetY": 0.0,
+    "flipBaseMapY": -1
+  }
+]

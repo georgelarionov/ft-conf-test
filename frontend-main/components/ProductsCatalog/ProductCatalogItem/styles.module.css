@@ -1,0 +1,48 @@
+.productItem {
+  position: relative;
+  width: 200px;
+  margin-right: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.roundButton {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 19px;
+  height: 19px;
+  /* background-color: #fff; */
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  /* color: #000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.roundButton svg {
+  width: 12px;
+  height: 12px;
+  fill: #000;
+}
+
+.selected {
+  background-color: var(--primary-bg-color);
+  color: #fff;
+}
+
+.selected svg {
+  fill: #fff;
+}
+
+@media (max-width: 768px) {
+  .productItem {
+    /* Дополнительные стили для мобильной версии, если необходимо */
+  }
+} 

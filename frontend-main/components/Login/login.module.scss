@@ -1,0 +1,25 @@
+.wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.form {
+  max-width: 510px;
+  width: 100%;
+  margin: 0 20px;
+
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}

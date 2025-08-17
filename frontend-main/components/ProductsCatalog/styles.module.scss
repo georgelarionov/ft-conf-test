@@ -1,0 +1,152 @@
+.productsCatalog {
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.catalogRoot {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.clearSelection.clearSelection {
+    background: rgba(237, 238, 242, 1);
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    height: 56px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.clearSelection.clearSelection img {
+    margin-right: 10px;
+}
+
+.catalogHeader {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: var(--space-2);
+    padding-top: var(--space-3);
+}
+
+@media screen and (max-width: 1024px) {
+    .productsCatalog {
+        /*max-height: initial !important;*/
+        /*overflow-y: visible !important;*/
+    }
+
+    .productsCatalog > *:nth-child(3n) {
+        width: 100%;
+        max-width: 100%;
+        max-height: 50vw;
+    }
+}
+
+.buttons {
+    padding: 0 var(--space-2);
+}
+
+.buttons > button {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .catalogRoot {
+        margin-top: 80px;
+    }
+
+    .catalogHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    /* Для мобильной версии */
+    @media screen and (max-width: 480px) {
+        /* Фиксируем заголовок */
+        .catalogHeader {
+            position: absolute;
+            top: 90px;
+            left: 0;
+            right: 0;
+            z-index: 1000; /* чтобы был поверх контента */
+            background-color: var(--color-background); /* чтобы под ним не просвечивал контент */
+            padding: 16px 20px 6px 20px;
+        }
+
+        /* Фиксируем каталог, располагая его сразу под заголовком */
+        .productsCatalog.productsCatalog.productsCatalog {
+            position: absolute;
+            top: 136px;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 16px;
+            -webkit-overflow-scrolling: touch;
+            overflow-y: hidden;
+            min-height: 100px;
+            background-color: var(--primary-background);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+    }
+
+    .productsCatalog::-webkit-scrollbar {
+        display: none;
+    }
+
+    .productsCatalog > * {
+        flex: 0 0 auto !important;
+        width: auto !important;
+        max-width: 120px !important;
+        margin-top: 10px !important;
+        margin-right: 0px !important;
+    }
+
+    .item {
+        flex: 0 0 auto;
+        width: auto;
+        // min-width: 88px;
+        height: 95px;
+        margin-right: 10px;
+    }
+
+    .inner {
+        height: 78px;
+        width: 78px;
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .productsCatalog > * {
+        flex: 0 0 auto !important;
+        width: auto !important;
+        max-width: 94px !important;
+        margin-top: 10px !important;
+        margin-right: 0px !important;
+    }
+
+    .item {
+        flex: 0 0 auto;
+        width: auto;
+        min-width: 88px;
+        height: 95px;
+        margin-right: 10px;
+    }
+    .catalogRoot {
+        margin-top: 90px;
+    }
+}

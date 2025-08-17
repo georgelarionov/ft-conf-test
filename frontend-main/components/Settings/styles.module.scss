@@ -1,0 +1,305 @@
+.settings {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  padding: 19px 0 19px 19px;
+  justify-content: space-between;
+  gap: 0;
+
+  @media screen and (min-width: 481px) {
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    width: auto;
+  }
+
+  @media screen and (min-width: 1025px) {
+    position: static;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.collapseBackground.open {
+  @media screen and (min-width: 481px) {
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: transparent;
+  }
+
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+}
+
+.collapseWrapper {
+  @media screen and (min-width: 481px) {
+    position: absolute;
+    z-index: 1;
+    left: calc(100% + 10px);
+    top: 20px;
+    padding: 10px;
+    background-color: var(--primary-bg-color);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    min-width: 320px;
+    max-height: 100%;
+    overflow-y: auto !important;
+  }
+
+  @media screen and (min-width: 1025px) {
+    position: static;
+    left: unset;
+    top: unset;
+    padding: 0;
+    background-color: unset;
+    border: none;
+    border-radius: 0;
+    min-width: unset;
+    overflow-y: hidden !important;
+  }
+}
+
+.settingsJson {
+  @media screen and (min-width: 481px) {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    left: 50%;
+    top: 130px;
+    bottom: 0;
+    padding: 10px;
+    background-color: var(--primary-bg-color);
+    overflow-y: auto !important;
+  }
+
+  @media screen and (min-width: 1025px) {
+    position: static;
+    left: unset;
+    top: unset;
+    padding: 0;
+    background-color: unset;
+  }
+}
+
+.jsonHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--color-border);
+  flex: 0 !important;
+}
+
+.jsonHeader button {
+  color: var(--primary-text-color);
+}
+
+.jsonHeader svg path {
+  stroke: var(--icon-color);
+}
+
+.jsonHeader span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jsonHeader button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.jsonInput {
+  font-size: 12px;
+  font-weight: 500;
+  height: 100%;
+  display: flex;
+  border: none;
+  padding-left: 21px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  resize: none;
+  font-family: "IBM Plex Mono", serif;
+  line-height: 18px;
+  text-align: left;
+  background: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.jsonInput:focus {
+  outline: none;
+}
+
+.catalogHeader {
+  font-size: 16px;
+  line-height: 24px;
+  padding: var(--space-1-5);
+  padding-top: 30px;
+  padding-bottom: 26px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: var(--workzone-title-background);
+  color: var(--workzone-title-text-color);
+}
+
+.catalogHeader svg path {
+  stroke: var(--workzone-title-text-color);
+}
+
+.collapse-css-transition {
+  transition: height 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.open {
+  background: rgba(237, 238, 242, 1);
+}
+
+.icon {
+  min-width: 25px;
+}
+
+.stylePanel {
+  /* Дополнительные стили при необходимости */
+
+  @media all and (min-width: 481px) {
+    & + .stylePanel {
+      margin-top: 14px;
+    }
+  }
+
+  @media all and (min-width: 1025px) {
+    & + .stylePanel {
+      margin-top: 0;
+    }
+  }
+}
+
+.collapseButton.collapseButton {
+  border: none;
+  height: 59px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.6);
+  border-radius: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-left: 16px;
+  position: relative;
+  background: var(--collapse-button-background);
+  color: var(--collapse-button-text-color);
+  cursor: pointer;
+  @media (max-width: 768px) {
+    &.select {
+      background: var(--tertiary-bg-color);
+      color: white;
+    }
+    &.unselect {
+      background: transparent;
+      color: #000;
+    }
+  }
+}
+
+.collapseButton.collapseButton svg {
+  margin-right: 10px;
+}
+
+.collapseButton.collapseButton svg path,
+.collapseButton.collapseButton svg circle {
+  fill: var(--workzone-title-text-color);
+}
+
+
+.collapseButton:active,
+.collapseButton:focus {
+  background: transparent;
+  outline: none;
+}
+
+.arrowDown {
+  position: absolute;
+  right: 0;
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.arrowDown svg path {
+  fill: transparent;
+  stroke: var(--workzone-title-text-color);
+}
+
+.arrowDownFlip {
+  transform: scaleY(-1) translateY(2px);
+}
+
+.loaderAutoSave {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+
+  .catalogHeader {
+    color: transparent;
+    width: 100%;
+    height: 90px;
+  }
+  .settings > * {
+    flex: 1;
+  }
+
+  .collapseButton.collapseButton {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--color-border);
+    color: #000;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .collapseButton.collapseButton .arrowDown {
+    display: none;
+  }
+
+  .collapseButton.collapseButton span {
+    display: none;
+  }
+
+  .collapseButton.collapseButton svg {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .settings {
+    display: flex;
+    position: absolute;
+  }
+}

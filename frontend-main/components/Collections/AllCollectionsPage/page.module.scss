@@ -1,0 +1,38 @@
+
+.content {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.createButton {
+    margin-top: 32px;
+}
+
+.item {
+    padding: 10;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #f9f9f9;
+
+    img {
+        max-width: 100%;
+        display: block;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.item_selected {
+    border: 2px solid blue;
+    background: #cce5ff;
+}
+
+.error {
+    width: 100%;
+    color: red;
+    text-align: center;
+}

@@ -1,0 +1,68 @@
+.printListCarousel {
+  width: 100%;
+}
+.printListCarousel :global(.hScroll__item) {
+  width: 33%;
+  min-width: 33%;
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  height: 127px;
+}
+.printListCarousel :global(.h-scroll) > * {
+  border-left: 1px solid var(--color-border);
+}
+
+.printListItem.printListItem.printListItem {
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;;
+  height: 100%;
+  border-bottom: 0;
+  border: none;
+  border-radius: 0;
+}
+.printListItem.printListItem.printListItem > div {
+  /* background: var(--secondary-bg-color); */
+}
+.printListItem.printListItem.printListItem:hover > div {
+  background: var(--secondary-bg-color);
+}
+.printListItem.printListItem.printListItem:hover button {
+  display: flex;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: var(--space-1);
+  object-fit: cover;
+}
+
+
+.cardTitle {
+  position: absolute;
+  bottom: -30px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.checkIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--color-border);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: var(--color-grey-dark);
+}
+
+@media screen and (max-width: 900px) {
+  .printListCarousel :global(.hScroll__item) {
+    width: 33.33333%;
+    min-width: 33.33333%;
+  }
+}

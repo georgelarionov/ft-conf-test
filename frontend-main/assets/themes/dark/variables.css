@@ -1,0 +1,60 @@
+:root[data-theme="dark"] {
+  --body-background: #202020;
+  --primary-text-color: #fff;
+  --primary-bg-color: #101010;
+  --secondary-bg-color: #181818;
+  --tertiary-bg-color: #343434;
+
+  --color-dark: #101010;
+  --color-light: #ffffff;
+
+  --color-grey: #F1F1F1;
+  --color-grey-dark: #878787;
+
+  --color-border: #606060;
+  --color-border-hover: #505050;
+
+  /* buttons */
+  --button-text-color: #fff;
+  --button-hover-color: #fff;
+  --button-background: #222222;
+  --button-hover-background: #000;
+
+  /* icons */
+  --icon-color: #fff;
+  --icon-hover-color: #eee;
+
+  /* header */
+  --header-background: var(--secondary-bg-color);
+  --header-text-color: var(--primary-text-color);
+  --header-active-background: var(--primary-bg-color);
+  --header-active-text-color: var(--primary-text-color);
+
+  /* workzone */
+  --workzone-title-background: var(--secondary-bg-color);
+  --workzone-title-text-color: var(--primary-text-color);
+  --workzone-tab-background: var(--button-background);
+  --workzone-tab-text-color: var(--primary-text-color);
+  --workzone-tab-hover-background: rgba(0,0,0,.1);
+  --workzone-tab-active-background: var(--tertiary-bg-color);
+  --workzone-tab-active-text-color: #fff;
+
+  /* tabs */
+  --tabs-background: var(--primary-bg-color);
+  --tabs-text-color: var(--primary-text-color);
+  --tabs-hover-background: rgba(0,0,0,.1);
+  --tabs-active-background: #000;
+  --tabs-active-text-color: #fff;
+
+  /* collapse button */
+  --collapse-button-background: var(--tertiary-bg-color);
+  --collapse-button-text-color: var(--primary-text-color);
+
+  /* settings items */
+  --settings-item-background-hover: var(--tertiary-bg-color);
+
+  /* nav-silde-button */
+  --nav-silde-button-background: #222222;
+  --nav-silde-button-background-active: #222222;
+  --nav-silde-button-text-color: var(--primary-text-color);
+}

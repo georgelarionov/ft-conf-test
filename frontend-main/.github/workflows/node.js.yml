@@ -1,0 +1,68 @@
+name: Deploy
+
+on:
+  pull_request:
+    types:
+      - closed
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js 23
+      uses: actions/setup-node@v3
+      with:
+        node-version: 23.x
+        cache: 'npm'
+
+    - name: Show contents
+      run: ls -R
+
+    # - run: yarn install
+    # - run: yarn next build
+
+    - name: Clear deploy dir
+      uses: garygrossgarten/github-action-ssh@release
+      with:
+        command: "rm -rf /home/ft_frontend/deploy/; mkdir /home/ft_frontend/deploy/"
+        host: ${{ vars.REMOTE_HOST }}
+        username: ${{ vars.REMOTE_USER }}
+        privateKey: ${{ secrets.REMOTE_SSH }}
+
+    - name: Upload files
+      uses: appleboy/scp-action@v0.1.4
+      with:
+        host: ${{ vars.REMOTE_HOST }}
+        username: ${{ vars.REMOTE_USER }}
+        key: ${{ secrets.REMOTE_SSH }}
+        source: ./
+        target: /home/ft_frontend/deploy
+
+    - name: Show contents
+      run: ls -R
+
+      # Run instance
+    - name: Run
+      uses: garygrossgarten/github-action-ssh@release
+      with:
+        command: "chmod +x /home/ft_frontend/deploy/.build/setup.sh; /home/ft_frontend/deploy/.build/setup.sh"
+        host: ${{ vars.REMOTE_HOST }}
+        username: ${{ vars.REMOTE_USER }}
+        privateKey: ${{ secrets.REMOTE_SSH }}
+
+    - name: Send complete
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_CHANNEL }}
+        token: ${{ secrets.TELEGRAM_BOT }}
+        format: "markdown"
+        message: |
+          *🟢 FT Configurator frontend deployed 🟢*
+          *Repo:* ${{ github.repository }}
+          *Author:* `${{ github.actor }}`
+          *Changes:* https://github.com/${{ github.repository }}/pull/${{ github.event.number }}
+          *Title:* `${{ github.event.pull_request.title }}`
+          *Link:* https://configurator.site/

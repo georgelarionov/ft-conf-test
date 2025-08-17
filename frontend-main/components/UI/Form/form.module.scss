@@ -1,0 +1,9 @@
+.form {
+  &> * {
+    margin: 0 0 22px;
+  }
+
+  button[type=submit] {
+    margin-top: 40px;
+  }
+}

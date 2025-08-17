@@ -1,0 +1,60 @@
+
+.colors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  display: flex;
+  font-weight: 600;
+  font-size: 13px;
+  color: #A7B4CC;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+.colors span {
+  padding: calc(var(--space-1) / 2);
+  width: 32px;
+  height: 32px;
+}
+.colorChoose {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.colorChoose span {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.activeColor {
+  border: 2px solid #E2EFF9;
+  border-radius: 100px;
+  padding: calc(var(--space-1) / 2);
+}
+
+.colorPicker {
+  /* background: #F8F9FB; */
+}
+@media screen and (max-width: 900px) {
+  .colorPicker {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pickers {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /*.colors {*/
+  /*  display: none;*/
+  /*}*/
+}

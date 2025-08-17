@@ -1,0 +1,17 @@
+﻿.footer {
+    height: 15px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    /* padding: var(--space-1); */
+    /* background: rgba(248, 249, 251, 1); */
+}
+
+.version {
+    font-size: 11px;
+    margin-left: 4px;
+}

@@ -1,0 +1,33 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+.route {
+  background: rgba(218, 218, 221, 1);
+  width: 30px;
+  height: 15px;
+  border-radius: 7.5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.thumb {
+  width: 12px;
+  min-width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 1.5px;
+  top: 1.5px;
+  transform: translateX(0);
+  transition: transform .3s;
+}
+
+.active {
+  background: var(--secondary-bg-color);
+  transform: translateX(15px);
+}

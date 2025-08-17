@@ -1,0 +1,63 @@
+﻿.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+
+  &__tab-list {
+    margin: 0 0 0px;
+    padding: 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  &__tab {
+    display: inline-block;
+    width: 50%;
+    // bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 21px 12px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+
+    background: var(--workzone-tab-background);
+
+    &--selected {
+      opacity: 1;
+      background-color: var(--workzone-tab-active-background);
+      color: #fff;
+    }
+
+    &--disabled {
+    }
+
+    &:focus {
+      outline: none;
+
+      &:after {
+
+      }
+    }
+  }
+
+  &__tab-panel {
+    display: none;
+
+    &--selected {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .react-tabs {
+    &__tab {
+      display: none;
+    }
+
+    &__tab-list {
+      display: none;
+    }
+  }
+}
+

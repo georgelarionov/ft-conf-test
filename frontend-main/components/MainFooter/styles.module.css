@@ -1,0 +1,13 @@
+﻿.footer {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-1);
+    /* background: rgba(248, 249, 251, 1); */
+}
+
+.version {
+    font-size: 14px;
+    margin-left: 12px;
+}

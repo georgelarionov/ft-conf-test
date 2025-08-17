@@ -1,0 +1,42 @@
+export enum TEXTURES {
+  // Fabrics
+  Book_pattern = 'book_pattern',
+  Brown_leather = 'brown_leather',
+  Denim_fabric = 'denim_fabric',
+  Denim_fabric_02 = 'denmin_fabric',
+  Fabric_leather_01 = 'fabric_leather_01',
+  Fabric_leather_02 = 'fabric_leather_02',
+  Fabric_pattern_05 = 'fabric_pattern_05',
+  Fabric_pattern_07 = 'fabric_pattern_07',
+  Leather_red_02 = 'leather_red_02',
+  Leather_red_03 = 'leather_red_03',
+  Leather_white = 'leather_white',
+  // Metals
+  Factory_wall = 'factory_wall',
+  Metal_plate = 'metal_plate',
+  Metal_rust = 'green_metal_rust',
+  Rust_coarse = 'rust_coarse_01',
+  Rusty_metal = 'rusty_metal_02',
+  Rusty_metal_02 = 'rusty_metal',
+  // Patterns
+  Digital_camouflage = 'digital_camouflage',
+  Etno_diagonal = 'etno_diagonal',
+  Forest_camouflage = 'forest_camouflage',
+  Grapefruits = 'grapefruits',
+  Leafs = 'leafs',
+  Roses = 'roses',
+  Zigzag = 'zigzag',
+  // New
+  canvas_solid = 'canvas_solid',
+  denim_abstract = 'denim_abstract',
+  fleece_solid = 'fleece_solid',
+  french_terry_solid = 'french_terry_solid',
+  satin_solid = 'satin_solid',
+  tweed_houndstooth = 'tweed_houndstooth',
+  vegan_fur_solid = 'vegan_fur_solid',
+  vegan_suede_solid = 'vegan_suede_solid',
+  velour_solid = 'velour_solid',
+  velvet_solid = 'velvet_solid',
+  // special
+  Reset = 'reset',
+}

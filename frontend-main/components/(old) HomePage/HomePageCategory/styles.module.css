@@ -1,0 +1,30 @@
+.homeCategory {
+  border: 1px solid var(--color-grey);
+  padding: var(--space-3);
+  cursor: pointer;
+}
+.homeCategory.disabled {
+  background-color: var(--color-border);
+  color: var(--color-grey-dark);
+}
+
+.upText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: var(--space-3);
+}
+.upText :global(.UI__icon) {
+  color: var(--color-grey-dark);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--color-grey-dark);
+}

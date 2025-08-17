@@ -1,0 +1,24 @@
+.actionArrows {
+  display: flex;
+  width: 100%;
+}
+.actionArrows button {
+  width: 50%;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.actionArrows button:last-child {
+  border-right: none;
+
+}
+
+.disabled :global(.UI__icon) {
+  color: var(--color-grey-dark);
+}

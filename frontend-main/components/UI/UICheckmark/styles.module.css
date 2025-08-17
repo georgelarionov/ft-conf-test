@@ -1,0 +1,22 @@
+﻿.checkMark {
+    /* check mark */
+
+    width: 27px;
+    height: 27px;
+    border: 1px solid #E6E7EB;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px 7px;
+}
+
+.checkMark img {
+    margin-top: 0;
+}

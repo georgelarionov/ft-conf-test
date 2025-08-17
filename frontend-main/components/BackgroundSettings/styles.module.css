@@ -1,0 +1,66 @@
+.inputs {
+  width: 100%;
+}
+
+.renderMap {
+  width: 100%;
+  padding: var(--space-1);
+}
+
+.renderContent {
+  position: relative;
+  padding: var(--space-1);
+  cursor: pointer;
+  border-radius: 15px;
+  transition: opacity .15s ease-in-out;
+}
+.renderContent:hover {
+  opacity: .8;
+}
+.renderContent img {
+  width: 100%;
+  display: flex;
+  border-radius: 15px;
+  max-height: 128px;
+}
+
+
+
+.renderTitle {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 10px;
+  font-weight: 600;
+  /* color: #000; */
+  /* background: rgba(255, 255, 255, 0.79); */
+  border-radius: 5px;
+  padding: 6px 16px;
+  padding-bottom: 5px;
+  z-index: 2;
+}
+
+.checkboxName {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+.checkbox {
+  display: flex;
+  height: 50px;
+
+}
+
+.checkMark {
+
+  position: absolute;
+
+  bottom: 20px;
+  right: 20px;
+}
+

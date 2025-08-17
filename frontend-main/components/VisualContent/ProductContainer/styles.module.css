@@ -1,0 +1,213 @@
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.scroll {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.recording {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 32px;
+    top: 34px;
+}
+
+.recording span {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.recordDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(244, 74, 76, 1);
+    margin-right: var(--space-0-5);
+}
+
+.topContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main {
+    flex: 1;
+    height: 100%;
+    min-height: 300px;
+    padding: 0;
+    position: relative;
+}
+
+.zoomSlider {
+    transform: rotate(-90deg) translate(50%, -200%);
+    display: inline-flex;
+    height: 25px;
+    transform-origin: 100% 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 200px;
+}
+
+.image {
+    flex-grow: 2;
+    justify-content: center;
+    display: flex;
+    min-height: 400px;
+}
+
+.image img {
+    width: 100%;
+    max-width: 600px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+    .zoomSlider {
+        display: none;
+    }
+
+    .topContent > *:not(.recording) {
+        display: none;
+    }
+
+    .image {
+        height: 200px;
+        min-height: initial;
+    }
+}
+
+.firstPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+}
+
+.firstPage .line1 {
+    line-height: 19px;
+    font-weight: 600;
+}
+
+.firstPage .line2 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 43px;
+    margin-top: 7px;
+    font-weight: 600;
+}
+
+.firstPage .line3 {
+    line-height: 19px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.logo360 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+
+    @media screen and (min-width: 481px) {
+        left: 90px;
+        top: 20px;
+    }
+
+    @media screen and (min-width: 1025px) {
+        left: 15px;
+        top: 15px;
+    }
+}
+
+.logo360.disabled {
+    opacity: 0.5;
+}
+
+.addToCart.addToCart, .addingToCart {
+    background: var(--button-background);
+    color: var(--button-text-color);
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    height: 56px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    position: absolute;
+    bottom: 32px;
+    width: 250px;
+    right: 20px;
+}
+
+.addToCart.addToCart:hover {
+    background: var(--button-hover-background);
+    color: var(--button-hover-color);
+}
+
+.addingToCart:hover {
+    background: var(--button-hover-background);
+    color: var(--button-hover-color);
+    cursor: auto;
+}
+
+.showed {
+    visibility: visible;
+}
+
+.purchased {
+    text-align: center;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo360 {
+        display: none;
+    }
+
+    .addToCart.addToCart, .addingToCart {
+        position: absolute;
+        width: calc(100vw - 30px);
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        padding: 0;
+
+    }
+}
+
+.addToCollection {
+    background: var(--button-background);
+    color: var(--button-text-color);
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    height: 56px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    position: absolute;
+    bottom: 32px;
+    width: 250px;
+    left: 20px;
+}
+
+.addToCollection:hover {
+    background: var(--button-hover-background);
+    color: var(--button-hover-color);
+}
+

@@ -1,0 +1,40 @@
+.productsList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.catalogHeader {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-top: 15px;
+  padding-left: 0px;
+  padding-bottom: 2px;
+}
+
+
+@media (max-width: 768px) {
+  .catalogHeader {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #000;
+    padding-top: 15px;
+    padding-left: 0;
+    padding-bottom: 2px;
+    position: sticky;
+    top: 0px;
+    z-index: 900;
+  }
+
+  .productsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 190px;
+  }
+}

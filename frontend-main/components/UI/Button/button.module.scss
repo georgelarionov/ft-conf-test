@@ -1,0 +1,119 @@
+.button, .variant_default {
+  --button-height: 62px;
+  --button-border-radius: 8px;
+  --button-font-size: 14px;
+  --button-width: auto;
+  --button-padding: 0 14px;
+  --button-margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: var(--button-width);
+  height: var(--button-height);
+
+  padding: var(--button-padding);
+  margin: var(--button-margin);
+
+  font-weight: 600;
+  font-size: var(--button-font-size);
+  text-transform: uppercase;
+
+  border: 0;
+  border-radius: var(--button-border-radius);
+  background: var(--button-background);
+  color: var(--button-text-color);
+
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.button:hover, .variant_default:hover {
+  background: var(--button-hover-background);
+  color: var(--button-hover-color);
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.button:hover, .variant_default:hover {
+  color: var(--button-hover-color);
+  background: var(--button-hover-background);
+
+  .icon svg path {
+    fill: var(--button-hover-color);
+  }
+}
+
+.button:active, .variant_default:active {
+  box-shadow: none;
+  outline: none;
+}
+
+/* disabled */
+.button[disabled].button[disabled] {
+  background: rgba(0, 0, 0, .05);
+  color: rgba(0, 0, 0, .4);
+  box-shadow: none;
+  cursor: default;
+
+}
+
+.button[disabled].button[disabled] .icon {
+  opacity: .4;
+}
+
+.button[disabled]:active {
+  transform: none;
+}
+
+.centreIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.variant_function {
+  --button-height: 56px;
+  --button-border-radius: 8px;
+  --button-font-size: 14px;
+  --button-width: auto;
+  font-weight: 600;
+}
+
+.variant_round {
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid var(--color-border);
+  color: #000;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+  .variant_function {
+    --button-height: 50px;
+    --button-width: 100%;
+    width: calc(100vw - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .variant_round {
+    color: #000;
+    border: 1px solid var(--color-border);
+  }
+
+}

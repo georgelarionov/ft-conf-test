@@ -1,0 +1,72 @@
+.content {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-top: 96px;
+    }
+}
+  
+.name_row {
+    display: flex;
+    // gap: 10px;
+    margin-bottom: 10px;
+}
+  
+.first-name, .last-name, .email {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.email {
+    margin-bottom: 10px;
+}
+
+.account_tools {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 20px;
+    display: flex;
+}
+
+.account_button {
+    margin-right: 32px;
+}
+
+.add_print_button {
+    
+}
+
+.error {
+    color: red;
+}
+
+.my_prints_tools {
+    display: flex;
+}
+
+.prints_designs {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.prints_segments {
+    max-width: 384px;
+}
+
+.my_prints_grid {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    padding-top: 16px;
+    // border-top: 1px solid gray;
+}

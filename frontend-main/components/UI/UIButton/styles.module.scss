@@ -1,0 +1,16 @@
+.button {
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-2);
+  color: var(--button-text-color);
+  background-color: var(--primary-bg-color);
+  cursor: pointer;
+  
+  &:hover {
+    background: rgba(0,0,0,.1);
+  }
+}

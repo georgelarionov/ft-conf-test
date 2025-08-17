@@ -1,0 +1,48 @@
+.nowrap {
+  white-space: nowrap;
+}
+
+.flex {
+  display: flex;
+}
+.inline {
+  display: inline-flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-grow {
+  flex-grow: 2;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.align-start {
+  align-items: flex-start;
+}
+
+.fluid {
+  width: 100%;
+}
+
+
+.pointer {
+  cursor: pointer;
+}
+

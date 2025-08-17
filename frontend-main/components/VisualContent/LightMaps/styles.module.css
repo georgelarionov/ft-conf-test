@@ -1,0 +1,68 @@
+.lightMaps {
+  position: absolute;
+  top: var(--space-3);
+  right: 0;
+  width: 15rem;
+  box-shadow: var(--box-shadow);
+  background-color: var(--color-light);
+}
+
+.lightMapsWrapper {
+  position: relative;
+}
+
+.openAction {
+  text-transform: uppercase;
+  color: var(--color-blue);
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.openAction:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  display: flex;
+  background-color: var(--color-blue);
+  left: calc(-1 * var(--space-2));
+  top: calc(50% - 3px);
+  border-radius: 50%;
+}
+.openAction.opened:before  {
+  display: none;
+}
+.openAction.opened {
+  color: var(--color-grey-dark);
+}
+.openAction.opened :global(.UI__icon) {
+  position: absolute;
+  left: calc(-1 * var(--space-2));
+  top: 1px;
+  color: var(--color-grey-dark);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  max-height: 24.5rem;
+  overflow-y: auto;
+}
+.list > * {
+  padding: 0;
+  border: none;
+}
+.list > * > *:first-child {
+  border: none;
+}
+.list > * span {
+  font-size: 12px;
+  border-top-left-radius: 8px;
+}
+.list  > * img {
+  border-radius: 8px;
+  overflow: hidden;
+}

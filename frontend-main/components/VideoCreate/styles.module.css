@@ -1,0 +1,204 @@
+.videoSettings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.videoSettings {
+    width: 100%;
+
+}
+
+.videoSettings > * :global(label) { /* Labels */
+    min-width: 7.5rem;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.videoSettings > * :global(span) { /* values */
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.videoSettings > * :global(span) {
+
+}
+
+
+.rotate {
+    display: flex;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.rotateCount {
+    display: flex;
+    flex-grow: 2;
+}
+
+.mobile {
+    display: none;
+}
+
+.action {
+    position: relative;
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.download {
+    margin-bottom: var(--space-1-5);
+}
+
+.rotateTitle {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.buttonRecord.buttonRecord {
+    background: var(--button-background);
+    color: var(--button-text-color);
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    height: 56px;;
+    justify-content: center;
+    width: 320px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.buttonRecord.buttonRecord:hover {
+    background: var(--button-hover-background);
+    color: var(--button-hover-color);
+}
+
+.buttonRecord.buttonRecord.playing {
+    background-color: var(--color-grey);
+    color: var(--color-dark);
+}
+
+.buttonRecord.buttonRecord:disabled {
+    background-color: var(--color-grey);
+}
+
+
+.rotate button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    /* background: rgba(248, 249, 251, 1); */
+    /* color: #000; */
+    cursor: pointer;
+    border-left: 1px solid var(--color-border);
+
+}
+
+.buttons > *:first-child {
+    border-right: 1px solid var(--color-border);
+}
+
+.buttons svg path {
+    fill: var(--icon-color);
+}
+
+.rotate button :global(.UI__icon) {
+    display: flex;
+    align-items: center;
+}
+
+.rotate button:disabled {
+    background-color: var(--color-grey-dark);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons .rotateCount {
+    width: 50px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.videoTrack {
+    display: none;
+    padding: 0 var(--space-1);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.videoTrack > *:first-child {
+    margin-right: var(--space-1);
+    border-right: 1px solid var(--color-border);
+}
+
+.videoPlayer {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.videoPlayer > *:first-child {
+    min-width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--color-grey);
+    margin-right: 0;
+}
+
+.videoPlayer > *:nth-child(2) {
+    padding: 0 var(--space-1);
+}
+
+@media screen and (max-width: 900px) {
+    .rotateCount {
+        justify-content: space-between;
+        border-bottom: 1px dashed var(--color-border);
+    }
+
+    .rotateCount > *:last-child {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px dashed var(--color-border);
+    }
+
+    .videoTrack {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rotateCount > *:last-child {
+        border-left: none;
+        padding: 0;
+    }
+
+    .rotateCount {
+
+        align-items: center;
+        border-bottom: none;
+    }
+
+
+    .videoTrack {
+
+        border-bottom: none;
+    }
+
+    .videoTrack > *:first-child {
+        border-right: none;
+    }
+}

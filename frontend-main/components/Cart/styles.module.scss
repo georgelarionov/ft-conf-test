@@ -1,0 +1,261 @@
+﻿.base {
+  visibility: hidden;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 4px;
+  width: 100vw;
+  transition: visibility 0s, opacity 0.3s linear;
+  opacity: 0;
+}
+
+.showed {
+  visibility: visible;
+  opacity: 1;
+}
+
+.background {
+  position: absolute;
+  height: calc(120vh - 0px);
+  overflow-y: hidden;
+  right: 0;
+  width: calc(100vw - 376px);
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.cart {
+  position: fixed;
+  height: 120vh;
+  right: 0;
+  width: 450px;
+  top: 0;
+  background-color: var(--primary-bg-color);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateX(100%);
+  z-index: 1002;
+}
+
+.showed .cart {
+  transform: translateX(0);
+}
+
+@media (max-width: 480px) {
+  .cart {
+    width: 100vw;
+  }
+}
+
+.header {
+  display: flex;
+  height: 67px;
+  justify-content: left;
+  align-items: center;
+  padding-left: 30px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header p {
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+}
+
+.content {
+  padding: 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.item {
+  display: flex;
+  position: relative;
+
+  & + .item {
+    margin-top: 20px;
+  }
+
+  .buttonDelete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+
+    svg path {
+      stroke: var(--icon-color);
+    }
+  }
+
+  .image {
+    margin-right: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+
+    img {
+      display: block;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+
+    .title {
+      font-weight: 600;
+      font-size: 16px;
+      padding-right: 50px;
+    }
+
+    .author {
+      font-weight: 600;
+      font-size: 14px;
+      color: #6D6D6D;
+    }
+
+    .price {
+      margin: auto 0 0;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}
+
+.itemsCount {
+  margin-left: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+
+  .count {
+    height: 22px;
+    min-width: 22px;
+    border-radius: 25px;
+    background: #F44A4C;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-right: 8px;
+  }
+}
+
+.subTotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.buttonSubmit {
+  padding: 10px 20px;
+
+  button {
+    width: 100%;
+  }
+}
+
+.footer {
+  margin: auto 0 0;
+
+  .notice {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--color-border);
+
+    .title {
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #E6E7EB;
+      border-radius: 6px;
+    }
+  }
+}
+
+.checkingOut {
+  width: 100%;
+  text-align: center;
+}
+
+.error {
+  width: 100%;
+  color: red;
+  text-align: center;
+}
+
+.closeCart {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: none;
+
+  @media (max-width: 480px) {
+    display: block;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    color: #666;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart {
+    flex: 1;
+    min-width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+    z-index: 1001;
+    width: 100%;
+  }
+
+  .header {
+    position: relative;
+    display: flex;
+    height: 90px;
+    justify-content: left;
+    align-items: center;
+    padding-left: 30px;
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .itemsCount {
+    margin-left: 22px;
+  }
+
+  .buttonSubmit {
+    padding: 0;
+    width: calc(100% - 40px);
+  }
+}

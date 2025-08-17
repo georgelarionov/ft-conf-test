@@ -1,0 +1,8 @@
+.breadcrumbs {
+  font-size: 14px;
+  color: var(--color-grey-dark);
+}
+.breadcrumbs strong {
+  font-size: 14px;
+  color: var(--color-dark);
+}

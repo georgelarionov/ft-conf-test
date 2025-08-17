@@ -1,0 +1,11 @@
+.button {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  .disabled, .disabled:hover {
+    cursor: pointer;
+    opacity: .4;
+  }

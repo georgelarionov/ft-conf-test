@@ -1,0 +1,22 @@
+
+.mobile_banner {
+    position: fixed;
+    top: -100;
+    left: 0;
+    right: 0;
+    background-color: #fdfdfdef;
+    text-align: center;
+    padding: 8px 0;
+    z-index: 9999;
+    font-size: 14px;
+    // font-weight: bold;
+    transition: top 0.5s ease-in-out; /* Smooth slide-in/out effect */
+  }
+
+  .mobile_banner.slide_down {
+    top: 0; /* Slide down into view */
+  }
+  
+  .mobile_banner.slide_up {
+    top: -100; /* Slide back up */
+  }

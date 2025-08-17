@@ -1,0 +1,174 @@
+.collections {
+  background: var(--secondary-bg-color);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.header {
+    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.list, .inner {
+  display: flex;
+  margin: 20px 0 0;
+  width: 100%;
+}
+
+.inner {
+  margin: 0 -10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.collection_container {
+    width: 24%;
+    max-width: 256px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.collection_vendor {
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+}
+
+.collection_name {
+    width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.collection {
+    width: 100%;
+  //   height: 120px;
+  background: var(--body-background);
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  padding: 8px 8px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px; /* optional gap between images */
+  cursor: pointer;
+}
+
+.collection div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.collection:hover {
+  border: 2px solid #00000066;
+}
+
+.collection_product_thumb {
+    border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+
+.viewAll {
+    position: absolute;
+    right: 0;
+//   flex: 1;
+  background: var(--button-background);
+  border: 0;
+  display: flex;
+//   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+//   max-width: 100px;
+//   min-width: 100px;
+    width: 100px;
+  height: 40px;
+  font-weight: bold;
+  // margin: 0 0 0 20px;
+  margin: auto 0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.viewAll:hover {
+  background: #000;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+
+  .collections {
+    padding: 8px;
+    width: calc(100%);
+  }
+
+  .inner {
+    margin: 0 -10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+  }
+  .inner > * {
+    min-width: 105px;
+    margin-right: 5px;
+  }
+
+  .viewAll {
+    flex: 1;
+    background: var(--button-background);
+    display: flex;
+    align-items: center;
+    top: 8px;
+    right: 0;
+    min-width: 145px;
+    height: 45px;
+    padding: 8px;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .viewAll:hover {
+    background: var(--button-hover-background);
+    color: var(--button-color);
+  }
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px; /* Устанавливаем высоту */
+    position: relative; /* Чтобы корректно позиционировать .viewAll */
+  }
+}
+

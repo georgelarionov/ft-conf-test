@@ -1,0 +1,143 @@
+.hue {
+    position: relative;
+    width: 100%;
+    margin-left: 20px;
+    height: 25px;
+}
+
+
+.hue :global(.rcp-saturation) {
+    display: none;
+}
+
+.hue :global(.rcp-body) {
+    padding: 0;
+    height: 8px;
+}
+
+.hue :global(.rcp-hue) {
+
+}
+
+.hue :global(.rcp-hue-cursor) {
+    background-color: var(--primary-bg-color) !important;
+    border-radius: 99px;
+    border: 2px solid var(--color-border);
+    width: 13px;
+    height: 13px;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 6px 0px #1F29371A;
+}
+
+.actions {
+    display: flex;
+    height: 40px;
+    /* border: 2px solid #EEF2F9; */
+    border: 2px solid var(--color-border);
+    border-radius: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.actions > * {
+    display: flex;
+    align-items: center;
+}
+
+.actions button {
+    border: none;
+    border-left: 1px solid var(--color-border);
+    color: var(--color-dark);
+    padding: 0 var(--space-2);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.hexContainer {
+    overflow: hidden;
+}
+
+.hexContainer :global(.rcp-light) {
+    border-radius: 4px !important;
+    max-height: 152px !important;
+
+    margin-top: 22px;
+    margin-bottom: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hexContainer :global(.rcp-saturation) {
+    border-radius: 4px;
+}
+
+.hexContainer :global(.rcp-body) {
+    display: none;
+}
+
+.hex {
+    /* color: #000; */
+    font-weight: 400;
+    font-size: 13px;
+    /* border-right: 2px solid #EEF2F9; */
+    border-right: 2px solid var(--color-border);
+    padding: 0 12px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.color {
+    flex-grow: 2;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 var(--space-2);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.color > *:first-child {
+    /* color: #000; */
+    font-size: 13px;
+    margin-right: var(--space-1);
+}
+
+.color > *:last-child {
+    font-size: 13px;
+    /* color:#000; */
+}
+
+@media screen and (max-width: 900px) {
+    .colorPicker {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.hexContainer :global(.rcp-saturation-cursor) {
+    width: 13px;
+    height: 13px;
+}
+
+@media screen and (max-width: 768px) {
+    .hexContainer {
+        overflow: hidden;
+    }
+
+    .hexContainer :global(.rcp-light) {
+        border-radius: 4px !important;
+        max-height: 152px !important;
+        width: auto !important;
+        margin: 22px 0 16px;
+    }
+
+    .actions {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hue {
+        margin: 0;
+    }
+
+}

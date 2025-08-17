@@ -1,0 +1,133 @@
+.drafts {
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.list, .inner {
+  display: flex;
+  margin: 20px 0 0;
+  width: 100%;
+}
+
+.inner {
+  margin: 0 -10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.item {
+  flex: 1;
+  margin: 0 10px;
+  // background: #F8F9FB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 130px;
+  min-height: 120px;
+  max-height: 120px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  img {
+    max-width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.item:hover {
+  border: 1px solid var(--color-border-hover);
+}
+
+.viewAll {
+  flex: 1;
+  background: var(--tertiary-bg-color);
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  max-width: 100px;
+  min-width: 100px;
+  font-weight: bold;
+  margin: 0 0 0 20px;
+}
+
+.viewAll:hover {
+  // background: #000;
+  // color: #fff;
+}
+
+@media (max-width: 768px) {
+
+  .drafts {
+    padding: 8px;
+    width: calc(100%);
+  }
+
+  .inner {
+    margin: 0 -10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+  }
+  .inner > * {
+    min-width: 105px;
+    margin-right: 5px;
+  }
+
+  .viewAll {
+    flex: 1;
+    // background: #F8F9FB !important;;
+    display: flex;
+    align-items: center;
+    top: 8px;
+    right: 0;
+    min-width: 145px;
+    height: 45px;
+    padding: 8px;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .viewAll:hover {
+    background: var(--button-hover-background);
+    color: var(--button-text-color);
+  }
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px; /* Устанавливаем высоту */
+    position: relative; /* Чтобы корректно позиционировать .viewAll */
+  }
+}
+

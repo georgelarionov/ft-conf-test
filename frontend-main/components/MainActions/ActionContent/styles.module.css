@@ -1,0 +1,36 @@
+.actionContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--secondary-bg-color);
+}
+
+.actionContent :global(.list) {
+    max-height: calc(100vh - 120px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.compContent {
+    display: flex;
+    flex-direction: column;
+    max-width: 379px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+@media screen and (max-width: 900px) {
+    .actionContent {
+        padding-bottom: 0 !important;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .compContent {
+        max-width: 379px;
+        width: 100%;
+    }
+
+}

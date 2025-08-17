@@ -1,0 +1,22 @@
+.content {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 1.5em;
+}
+  
+.runthru_guide_video {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 96px;
+  }
+}

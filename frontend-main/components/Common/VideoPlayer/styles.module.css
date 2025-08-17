@@ -1,0 +1,21 @@
+.player {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.playIcon {
+  margin-right: var(--space-4);
+  cursor: pointer;
+}
+
+.timer {
+  font-family: Arial, monospace;
+  margin-right: var(--space-1);
+}
+
+@media screen and (max-width: 900px) {
+  .timer {
+    margin-right: var(--space-0-5);
+  }
+}

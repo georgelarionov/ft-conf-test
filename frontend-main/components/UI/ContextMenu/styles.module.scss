@@ -1,0 +1,130 @@
+.container {
+  position: relative;
+
+  svg path, svg circle {
+    fill: var(--icon-color);
+  }
+
+  &:hover svg path, &:hover svg circle {
+    fill: var(--icon-hover-color);
+  }
+}
+
+.buttonContext {
+  background: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  @media all and (min-width: 1100px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.contextMenu {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  right: 0;
+  width: auto;
+  padding: 12px 0;
+  background: var(--button-background);
+  border-radius: 8px;
+  min-width: 160px;
+
+  opacity: 0;
+  animation-delay: 0s;
+  animation-duration: .15s;
+  animation-name: appearance;
+  animation-fill-mode: forwards;
+
+  // @media all and (min-width: 1100px) {
+  //   position: absolute;
+  //   right: 0;
+  //   left: unset;
+  //   width: auto;
+  //   padding: 6px 0;
+  //   animation-name: appearance;
+  // }
+
+  &.top {
+    top: unset;
+    bottom: 12px;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 11px 20px 11px 11px;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+  white-space: nowrap;
+  font-size: 15px;
+  height: 40px;
+  position: relative;
+
+  &.centered {
+    justify-content: center;
+  }
+
+  @media all and (min-width: 1100px) {
+    padding: 12px 20px 12px 14px;
+  }
+
+  &:hover {
+    background: var(--tertiary-bg-color);
+  }
+}
+
+.buttonClose {
+  position: absolute;
+  z-index: 1;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media all and (min-width: 1000px) {
+    top: 24px;
+    right: 24px;
+  }
+}
+
+@keyframes appearanceMobile {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
