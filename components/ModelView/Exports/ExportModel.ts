@@ -221,10 +221,11 @@ export class ExportModel {
       const exporter = new USDZExporter();
 
       console.log("Start model parse...");
-      const arraybuffer = await exporter.parseAsync(clonedModel);
+      const result = await exporter.parseAsync(clonedModel);
       console.log("End model parse");
       
-      const blob = new Blob([arraybuffer], { type: 'application/octet-stream' });
+      // Если result это Uint8Array, создаем Blob напрямую из него
+      const blob = new Blob([result], { type: 'application/octet-stream' });
 
       console.log("Create link...");
       const link = document.createElement('a');

@@ -113,6 +113,19 @@ vercel --prod
 2. Убедитесь, что все зависимости установлены
 3. Проверьте совместимость версий Node.js
 
+### Ошибка TypeScript с Blob/ArrayBuffer
+
+Если возникает ошибка типа:
+```
+Type error: Type 'Uint8Array<ArrayBufferLike>' is not assignable to type 'BlobPart'
+```
+
+**Решение**: В файле `components/ModelView/Exports/ExportModel.ts` уже исправлено:
+```typescript
+// Вместо: new Blob([arraybuffer], ...)
+// Используем: new Blob([result], ...)
+```
+
 ### Проблемы с API
 
 1. Проверьте CORS настройки на сервере
