@@ -1,0 +1,85 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": ["./tsconfig.json"]
+    },
+    "extends": [
+        "next/core-web-vitals",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "plugins": ["@typescript-eslint", "react", "react-hooks"],
+    "rules": {
+        "@typescript-eslint/lines-between-class-members": ["off"],
+        "react/no-array-index-key": ["off"],
+        "@typescript-eslint/no-shadow": ["off"],
+        "no-restricted-globals": ["off"],
+        "func-names": ["error", "never"],
+        "linebreak-style": ["off"],
+        "import/no-extraneous-dependencies": ["off"],
+        "jsx-a11y/media-has-caption": ["off"],
+        "import/prefer-default-export": ["off"],
+        "import/no-unresolved": ["off"],
+        "import/extensions": ["off"],
+        "import/newline-after-import": ["off"],
+        "no-console": ["off"],
+        "arrow-body-style": ["off"],
+        "@typescript-eslint/no-unused-vars": ["off"],
+        "react/forbid-prop-types": ["off"],
+        "react/no-danger": ["off"],
+        "react/require-default-props": ["off"],
+        "react/jsx-closing-bracket-location": ["off"],
+        "react/jsx-filename-extension": [
+            1,
+            { "extensions": [".js", ".jsx", ".tsx"] }
+        ],
+        "react/react-in-jsx-scope": ["off"],
+        "global-require": ["off"],
+        "no-shadow": ["off"],
+        "eqeqeq": ["off"],
+        "no-unused-expressions": ["off"],
+        "class-methods-use-this": ["off"],
+        "no-param-reassign": ["error", { "props": false }],
+        "camelcase": ["off"],
+        "jsx-a11y/no-noninteractive-element-interactions": ["off"],
+        "no-underscore-dangle": ["off"],
+        "function-paren-newline": ["off"],
+        "jsx-a11y/label-has-for": ["off"],
+        "object-curly-newline": ["off"],
+        "object-curly-spacing": ["error", "always"],
+        "react/sort-comp": ["off"],
+        "jsx-a11y/click-events-have-key-events": ["off"],
+        "jsx-a11y/anchor-is-valid": ["off"],
+        "react/prop-types": 1,
+        "react-hooks/rules-of-hooks": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "react/jsx-props-no-spreading": "off",
+        "comma-dangle": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/comma-dangle": ["off"],
+        "@typescript-eslint/naming-convention": [
+            "off",
+            {
+            "selector": "enumMember",
+            "format": ["PascalCase"]
+            }
+        ]
+    },
+    "overrides": [
+    {
+        "files": ["**/*.tsx"],
+        "rules": {
+            "react/prop-types": "off",
+            "import/newline-after-import": "off",
+            "react/destructuring-assignment": "off"
+        }
+    },
+    {
+        "files": ["*.js"],
+        "parserOptions": {
+            "project": null
+        }
+    }
+    ]
+}
